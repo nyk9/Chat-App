@@ -1,0 +1,5 @@
+body{
+    /* 眩しいのが苦手なので背景を灰色にする また、見やすいように文字色を白にする */
+    background-color: gray;
+    color: white;
+}
