@@ -3,7 +3,7 @@ body{
     background-color: gray;
     color: white;
 }
-#form2{
+#input_chat{
     /* 入力フォームを画面下部の中央に設置する */
     position: absolute;
     bottom: 1em;
