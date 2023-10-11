@@ -2,6 +2,7 @@ body{
     /* 眩しいのが苦手なので背景を灰色にする また、見やすいように文字色を白にする */
     background-color: gray;
     color: white;
+    font-family: cursive, 'UD デジタル 教科書体 NP-B';
 }
 #input_chat{
     /* 入力フォームを画面下部の中央に設置する */
@@ -21,5 +22,7 @@ body{
 
 .output_chat{
     /* 出力されたものは背景を周りと変える */
+
     background-color: green;
+    padding: 5%;
 }

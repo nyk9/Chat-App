@@ -3,7 +3,7 @@ window.onload = function(){
     let chat = document.querySelector("#text");
     let sub = document.getElementById("input_chat");
     sub.addEventListener('click', ()=>{
-        if(sub == null){
+        if(chat.value == ""){
             return false;
         }
         console.log(chat.value);
