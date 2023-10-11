@@ -9,7 +9,7 @@ window.onload = function(){
         console.log(chat.value);
         // 出力
         let output = document.querySelector("#output_chat");
-        output.innerHTML += `<p class='output_chat'>${chat.value}</p>`;
+        output.innerHTML += `<div class='output_chat'><p>${chat.value}</p><div>`;
         chat.value = "";
     });
 };
