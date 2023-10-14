@@ -3,12 +3,14 @@ body{
     background-color: gray;
     color: white;
     font-family: cursive, 'UD デジタル 教科書体 NP-B';
+    height: 90%;
 }
 #input_chat{
     /* 入力フォームを画面下部の中央に設置する */
     position: absolute;
-    bottom: 1em;
+    bottom: 1vh;
     left: 40%;
+    width: 40vh;
 }
 #output_chat{
     position: absolute;
@@ -18,7 +20,7 @@ body{
     left: 20%;
     width: 80%;
     top:auto;
-    height: 45em;
+    min-height: 90vh;
 }
 
 .output_chat{
