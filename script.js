@@ -42,7 +42,7 @@ $("#submit").click(function () {
             console.log(chat);
         }
         let textchat = `<div class="output_chat"><p>`+chat+`</p></div>`;
-        $("#output_chat").append(textchat.replace(/\r\n/g,'<br>'));
+        $("#output_chat").append(textchat.replace(/\n/g,'<br>'));
         $("#text").val(" ");
     }
 });
