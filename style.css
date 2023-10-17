@@ -1,17 +1,21 @@
 body{
     /* 眩しいのが苦手なので背景を灰色にする また、見やすいように文字色を白にする */
+    position: relative;
     background-color: gray;
     color: white;
     font-family: cursive, 'UD デジタル 教科書体 NP-B';
     height: 90%;
+    width: 99%;
 }
+
 #input_chat{
     /* 入力フォームを画面下部の中央に設置する */
-    position: absolute;
+    position: fixed;
     bottom: 1vh;
     left: 40%;
     width: 40vh;
 }
+
 #output_chat{
     position: absolute;
     border:solid;
@@ -20,10 +24,12 @@ body{
     width: 79%;
     top:auto;
     min-height: 90vh;
+    overflow: hidden;
 }
 
 .output_chat{
     /* 出力されたものは背景を周りと変える */
+
     border-radius: 5px 5px;
     background-color: #00ff00;
     margin-left: 50%;
