@@ -25,6 +25,7 @@ body{
     top:auto;
     min-height: 90vh;
     overflow: hidden;
+    overflow-wrap: break-word;
 }
 
 .output_chat{
