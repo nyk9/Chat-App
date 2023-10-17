@@ -2,18 +2,19 @@
  * @key-books
  *
  */
-$.ajax({
-    type: "method",
-    url: "url",
-    data: "data",
-    dataType: "dataType",
-    success: function (response) {
+// $.ajax({
+//     type: "method",
+//     url: "url",
+//     data: "data",
+//     dataType: "dataType",
+//     success: function (response) {
         
-    }
-});
+//     }
+// });
 
 /**
  * @key-books
+ * @param {object} e 何のボタンを押したか
  * @return {boolean}
  */
 $("#input_chat").on('keyup', function(e){
@@ -26,6 +27,7 @@ $("#input_chat").on('keyup', function(e){
 })
 
 /**
+ * @key-books
  * @return {boolean}
  */
 $("#submit").click(function () {
