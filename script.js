@@ -12,6 +12,16 @@
 //     }
 // });
 
+// TODO:テーマを選んだら変わるようにする。
+$(function(){
+    $("#theme").hover(
+        function(){
+            $(".themeColorSub").show();
+        },function(){
+            $(".themeColorSub").hide();
+        }
+    )
+});
 /**
  * @key-books
  * @param {object} e 何のボタンを押したか
