@@ -4,10 +4,29 @@ body{
     background-color: gray;
     color: white;
     font-family: cursive, 'UD デジタル 教科書体 NP-B';
-    height: 90%;
+    height: 99%;
     width: 99%;
 }
+/* TODO : テーマカラーをそれぞれ用意する(白、黒、色覚異常用) */
+#theme{
+    position: fixed;
+    right: 10vh;
+    top: 0.1vh;
+    background-color: black;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.themeColorSub{
+    display: none;
 
+}
+li{
+    list-style: none;
+}
+ul{
+    padding-left: 0;
+}
 #input_chat{
     /* 入力フォームを画面下部の中央に設置する */
     position: fixed;
@@ -18,19 +37,18 @@ body{
 
 #output_chat{
     position: absolute;
-    border:solid;
+    border:solid 2px;
     background-color: skyblue;
-    left: 20%;
-    width: 79%;
-    top:auto;
-    min-height: 90vh;
+    left: 10%;
+    right: 1%;
+    min-height: 85vh;
     overflow: hidden;
     overflow-wrap: break-word;
+    top: 5vh;
 }
 
 .output_chat{
     /* 出力されたものは背景を周りと変える */
-
     border-radius: 5px 5px;
     background-color: #00ff00;
     margin-left: 50%;
