@@ -12,8 +12,8 @@
                 <li>テーマの変更</li>
                 <li>
                     <ul class="themeColorSub">
-                        <li>white</li>
-                        <li>dark</li>
+                        <li id="whiteMode">white</li>
+                        <li id="darkMode">dark</li>
                     </ul>
                 </li>
             </ul>
@@ -21,6 +21,9 @@
         <!-- 出力用のフォーム -->
         <div id="output_chat">
         </div>
+        <!-- 相手のメッセージ 仮 -->
+        <textarea id="message"></textarea>
+        <input type="button" id="submit2">
         <!-- 入力用のフォーム -->
         <div id="input_chat" >
             <textarea id="text"  placeholder="テキスト" ></textarea>

@@ -21,6 +21,33 @@ $(function(){
             $(".themeColorSub").hide();
         }
     )
+    $("#whiteMode").click(function(){
+        console.log("white mode");
+        $("body").css({"background-color":"white","color":"black"});
+        $("#output_chat").css({"background-color":"black"})
+    });
+    $("#darkMode").click(function(){
+        console.log("dark mode");
+        $("body").css({"background-color":"gray","color":"white"});
+        $("#output_chat").css({"background-color":"aqua"});
+    });
+
+
+    $("#submit2").click(function(){
+        let chat = $("#message").val();
+        if(chat == ""){
+            console.log(false);
+            return false;
+        }else{
+            for(let i=0; i<chat.length; i++){
+                // console.log(chat[i]);
+                console.log(chat);
+            }
+            let textchat = `<div class="your_text"><p>`+chat+`</p></div>`;
+            $("#output_chat").append(textchat.replace(/\n/g,'<br>'));
+            $("#text").val(" ");
+        }
+    });
 });
 /**
  * @key-books
@@ -51,7 +78,7 @@ $("#submit").click(function () {
             // console.log(chat[i]);
             console.log(chat);
         }
-        let textchat = `<div class="output_chat"><p>`+chat+`</p></div>`;
+        let textchat = `<div class="my_text"><p>`+chat+`</p></div>`;
         $("#output_chat").append(textchat.replace(/\n/g,'<br>'));
         $("#text").val(" ");
     }

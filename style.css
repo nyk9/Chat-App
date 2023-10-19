@@ -12,7 +12,7 @@ body{
     position: fixed;
     right: 10vh;
     top: 0.1vh;
-    background-color: black;
+    background-color: #6b4a9f;
     z-index: 10;
     padding-top: 0;
     padding-bottom: 0;
@@ -38,7 +38,7 @@ ul{
 #output_chat{
     position: absolute;
     border:solid 2px;
-    background-color: skyblue;
+    background-color: aqua;
     left: 10%;
     right: 1%;
     min-height: 85vh;
@@ -47,10 +47,17 @@ ul{
     top: 5vh;
 }
 
-.output_chat{
+.my_text{
     /* 出力されたものは背景を周りと変える */
     border-radius: 5px 5px;
     background-color: #00ff00;
     margin-left: 50%;
     margin-right: 10px;
+}
+
+.your_text{
+    border-radius: 5px 5px;
+    background-color: darkblue;
+    margin-left: 1%;
+    margin-right: 50%;
 }
